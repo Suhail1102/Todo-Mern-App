@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const mongoURI = "mongodb://127.0.0.1:27017/IMS";
+const mongoURI = "mongodb+srv://mohdsuhail2762:<WBBRl6oxhwnVnNwF>@ims.90lap.mongodb.net/?retryWrites=true&w=majority&appName=IMS";
 
 const connectToMongo = async () => {
   try {
