@@ -34,7 +34,7 @@ export default function InsertProduct() {
         setError("");
 
         try {
-            const res = await fetch("http://localhost:3001/api/insertproduct", {
+            const res = await fetch("https://todo-mern-app-4i4g.onrender.com/api/insertproduct", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

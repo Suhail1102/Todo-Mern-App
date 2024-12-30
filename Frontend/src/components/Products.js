@@ -12,7 +12,7 @@ export default function Products() {
     const getProducts = async (e) => {
 
         try {
-            const res = await fetch("http://localhost:3001/api/products", {
+            const res = await fetch("https://todo-mern-app-4i4g.onrender.com/api/products", {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json"
@@ -36,7 +36,7 @@ export default function Products() {
 
     const deleteProduct = async (id) => {
 
-        const response = await fetch(`http://localhost:3001/api/deleteproduct/${id}`, {
+        const response = await fetch(`https://todo-mern-app-4i4g.onrender.com/api/deleteproduct/${id}`, {
             method: "DELETE",
             headers: {
                 "Content-Type": "application/json"

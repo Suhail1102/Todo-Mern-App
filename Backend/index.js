@@ -11,7 +11,11 @@ const _dirname = path.resolve();
 const cors = require('cors')
 const router = require('./Routes/router')
 
-app.use(cors());
+const corsOption = {
+  origin: "https://todo-mern-app-4i4g.onrender.com",
+  Credential: true
+}
+app.use(cors(corsOption));
 app.use(express.json());
 app.use(router);
 app.use(express.static(path.join(_dirname, "/Frontend/build")));

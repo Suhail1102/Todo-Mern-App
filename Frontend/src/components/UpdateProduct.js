@@ -27,7 +27,7 @@ export default function InsertProduct() {
     useEffect(() => {
         const getProduct = async () => {
           try {
-            const res = await fetch(`http://localhost:3001/api/products/${id}`, {
+            const res = await fetch(`https://todo-mern-app-4i4g.onrender.com/api/products/${id}`, {
               method: "GET",
               headers: {
                 "Content-Type": "application/json"
@@ -64,7 +64,7 @@ export default function InsertProduct() {
         setError("");
 
         try {
-            const response = await fetch(`http://localhost:3001/api/updateproduct/${id}`, {
+            const response = await fetch(`https://todo-mern-app-4i4g.onrender.com/api/updateproduct/${id}`, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json"
